@@ -250,3 +250,7 @@ input[type="search"] {
 .partition {
     margin: 0px 0.25vw;
 }
+
+.footer {
+    display: none;
+}

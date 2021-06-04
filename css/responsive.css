@@ -229,10 +229,6 @@ i {
         top: calc(100vh - 6.3vw);
     } */
 
-    html {
-        overflow-x: hidden;
-    }
-
    .logo {
     padding-left: 0px;
    }
@@ -243,19 +239,17 @@ i {
 
     .content {
         display: block;
-        margin-top: 3vw;
+        margin: 9vw auto;
     }
 
     .sidebar {
+        /*
         z-index: 2;
         height: 0;
         flex-direction: row;
         justify-content: space-between;
-        top: calc(100vh - 6.3vw);
-    }
-
-    .sidebar .item {
-        margin-top: 1.2vw;
+        top: calc(100vh - 6.3vw); */
+        display: none;
     }
 
     .set-down-background {
@@ -270,6 +264,7 @@ i {
         grid-template-columns: auto;
         justify-content: center;
         padding-left: 0;
+        padding-right: 0;
     }
 
     .box, .box2, .box3, .box4 {
@@ -317,7 +312,7 @@ i {
         display: none;
     }
 
-    .apps, .apps i {
+    .apps, .apps i, .notifications, .notifications i {
         display: none;
     }
 
@@ -364,4 +359,114 @@ i {
         width: 100%;    
     }
 
+    .footer {
+        display: block;
+        position: fixed;
+        top: 93vh;
+        width: 100%;
+        padding-top: 2vh; 
+        padding-bottom: 2vh;
+        background-color: #fff;
+ 
+    }
+
+    .foo {
+        display: inline-block;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .home-foo {
+        padding-left: 1.2vw;
+    }
+
+    .library-foo {
+        padding-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .profile {
+        padding-right: 1.2vw;
+    }
+
+    .main-content {
+        margin-top: 10vw;
+    } 
+
+    .upper-bar {
+        margin-top: 2vw;
+    }
+
+    .extension i {
+        transform: scale(3, 3);
+        top: 1vw;
+    }
+
+    .foo i {
+        transform: scale(2.8, 2.8);
+    }
+
+    .logo i {
+        transform: scale(4, 4);
+        padding: 0 4.2vw;
+    }
+
+    .name {
+        transform: scale(4, 4);
+        top: 2.7vw;
+        left: 1.3vw;
+    }
+    
+    #img {
+        width: 11.5vw;
+        height: 11.5vw;
+        border-radius: 7.5vw;
+    }
+
+    .footer {
+        top: 92.2vh;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+    }
+
+    .foo {
+        padding-left: 6.8vw;
+        padding-right: 6.8vw;
+    }
+
+    .foo i {
+        transform: scale(3.7, 3.7);
+    }
+
+    .home-foo {
+        padding-left: 1.2vw;
+    }
+
+    .library-foo {
+        padding-right: 0;
+    }
+
+    .line {
+        margin-top: 3.7vw;
+    }
+
+    .title {
+        margin-top: 2.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .text {
+        margin-left: 2vw;
+        font-size: 4vw;
+    }
+
+    .first-text {
+        max-height: 15vw;
+    }
+
+    .second-text, .third-text {
+        max-height: 8vw;
+    }
 }
